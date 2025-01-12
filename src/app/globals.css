@@ -6,10 +6,15 @@
     --background: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--foreground);
     background: var(--background);
     font-family: var(--font-jost), var(--font-montserrat), var(--font-inter), sans-serif;
+    overflow-x: hidden;
 }
 
 .gradient-top {

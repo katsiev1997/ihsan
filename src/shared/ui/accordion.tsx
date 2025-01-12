@@ -23,7 +23,7 @@ export const Accordion = ({ title, children }: Props) => {
                 <h3 className="text-[#2b5b18] font-semibold text-2xl uppercase">{title}</h3>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className={`rotate-90 transition-transform duration-300 ${isOpen ? "-rotate-90" : ""}`}
+                    className={`transform transition-transform duration-300 ${isOpen ? "-rotate-90" : "rotate-90"}`}
                 >
                     <ArrowIcon />
                 </button>

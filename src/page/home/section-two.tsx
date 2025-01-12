@@ -105,7 +105,7 @@ const data = [
 
 export const SectionTwo = () => {
     return (
-        <section className="w-full flex flex-col gap-5 items-center">
+        <section id="fund" className="w-full flex flex-col gap-5 items-center">
             <h2 className="text-[50px] text-[#2b5b18] font-semibold">О ФОНДЕ</h2>
             {data.map((item, i) => (
                 <Accordion key={i} title={item.title}>
