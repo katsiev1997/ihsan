@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 export const Header = () => {
+    const [open, setOpen] = useState(false);
     return (
         <>
             <header className="w-full flex items-center justify-between max-w-[1300px] px-5 mx-auto h-[105px]">
@@ -21,20 +24,36 @@ export const Header = () => {
                             <a href="#news">НОВОСТИ</a>
                         </li>
                         <li>
-                            <button className="font-medium text-[#51a132] bg-white rounded-[5px] w-[209px] h-11">СВЯЗАТЬСЯ С НАМИ</button>
+                            <button
+                                onClick={() => setOpen(true)}
+                                className="font-medium text-[#51a132] bg-white rounded-[5px] w-[209px] h-11"
+                            >
+                                СВЯЗАТЬСЯ С НАМИ
+                            </button>
                         </li>
                     </ul>
                 </nav>
+                <button
+                    onClick={() => setOpen(true)}
+                    className="font-medium text-[#51a132] bg-white rounded-[5px] w-[209px] h-11 lg:hidden"
+                >
+                    СВЯЗАТЬСЯ С НАМИ
+                </button>
             </header>
             <div className="w-full bg-[rgba(52,108,30,0.52)] h-[120px]">
                 <div className="w-full h-full max-w-[1300px] px-5 mx-auto flex items-center gap-14">
                     <Image src="/logo-2.png" alt="logo-2" width={75} height={90} />
-                    <div className="flex flex-col gap-[30px] text-white">
+                    <div className="flex flex-col gap-[30px] text-white text-xs lg:text-base">
                         <p>БЛАГОТВОРИТЕЛЬНЫЙ ФОНД РЕСПУБЛИКИ ИНГУШЕТИЯ “ИХСАН” (ИСКРЕННОСТЬ) </p>
                         <p>НАЦИОНАЛЬНЫЙ ПРОЕКТ “БЕЗЛИКИЕ”</p>
                     </div>
                 </div>
             </div>
+            {open && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 blur-sm flex items-center justify-center z-10">
+                    <div className="flex items-center justify-center bg-white rounded-[16px] border-[3px] w-[440px] h-[245px]"></div>
+                </div>
+            )}
         </>
     );
 };
