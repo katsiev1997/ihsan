@@ -4,7 +4,7 @@ import React from "react";
 export const SectionThree = () => {
     return (
         <section id="programs" className="w-full flex flex-col gap-5 items-center">
-            <h2 className="text-[50px] text-[#2b5b18] font-semibold">О ФОНДЕ</h2>
+            <h2 className="text-[50px] text-[#2b5b18] font-semibold">ПРОГРАММЫ ФОНДА</h2>
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <Card imageUrl="/arm-help.png" alt="arm-help" title="“ПРОТЯНИ РУКУ ПОМОЩИ”" />
                 <Card imageUrl="/save-language.png" alt="save-language" title="СОХРАНЕНИЕ ЯЗЫКА" />

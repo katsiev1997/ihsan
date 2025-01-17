@@ -3,6 +3,8 @@ import { SectionTwo } from "@/page/home/section-two";
 import { SectionThree } from "@/page/home/section-three";
 import { Header } from "@/widgets/header";
 import { SectionFour } from "@/page/home/section-four";
+import { SectionFive } from "@/page/home/section-five";
+import { SectionSix } from "@/page/home/section-six";
 
 export default function Home() {
     return (
@@ -15,8 +17,9 @@ export default function Home() {
                 <SectionTwo />
                 <SectionThree />
                 <SectionFour />
-                <div></div>
+                <SectionFive />
             </div>
+            <SectionSix />
         </div>
     );
 }
