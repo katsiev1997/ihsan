@@ -2,6 +2,133 @@ import { Accordion } from "@/shared/ui/accordion";
 import Image from "next/image";
 import React from "react";
 
+const socials = [
+	{
+		id: 1,
+		icons: [
+			{
+				id: 1,
+				iconAlt: "whatsapp",
+				iconUrl: "/whatsapp.png",
+				href: "https://wa.me/+79640279097",
+			},
+		],
+		title: "8(964) 027-90-97",
+	},
+	{
+		id: 2,
+		icons: [
+			{
+				id: 1,
+				iconAlt: "whatsapp",
+				iconUrl: "/whatsapp.png",
+				href: "https://wa.me/+79281113333",
+			},
+		],
+		title: "8(928) 111-33-33",
+	},
+	{
+		id: 3,
+		icons: [
+			{
+				id: 1,
+				iconAlt: "instagram",
+				iconUrl: "/instagram.png",
+				href: "https://instagram.com/fondihsan",
+			},
+		],
+		title: "fondihsan",
+	},
+	// <div className="flex items-center gap-4">
+	// 					<div className="flex items-center gap-1">
+	// 						<a target="_blank" href="https://wa.me/+79281113333">
+	// 							<Image
+	// 								src="/instagram.png"
+	// 								alt="instagram"
+	// 								width={31}
+	// 								height={31}
+	// 							/>
+	// 						</a>
+	// 					</div>
+	// 					<p className="text-xl">bezlikie.official</p>
+	// 				</div>
+	{
+		id: 4,
+		icons: [
+			{
+				id: 1,
+				iconAlt: "instagram",
+				iconUrl: "/instagram.png",
+				href: "https://instagram.com/bezlikie.official",
+			},
+		],
+		title: "bezlikie.official",
+	},
+	{
+		id: 5,
+		icons: [
+			{
+				id: 1,
+				iconAlt: "vk",
+				iconUrl: "/vk.png",
+				href: "https://vk.com/fondihsan",
+			},
+		],
+		title: "fondihsan",
+	},
+	{
+		id: 6,
+		icons: [
+			{
+				id: 1,
+				iconAlt: "telegram",
+				iconUrl: "/telegram.png",
+				href: "https://t.me/bezlikie_official",
+			},
+		],
+		title: "bezlikie_official",
+	},
+];
+
+const contacts = [
+	{
+		id: 1,
+		icons: [
+			{
+				id: 1,
+				iconAlt: "telegram",
+				iconUrl: "/telegram.png",
+				href: "https://t.me/multiki_falg",
+			},
+			{
+				id: 2,
+				iconAlt: "instagram",
+				iconUrl: "/instagram.png",
+				href: "https://instagram.com/multiki_falg",
+			},
+		],
+		title: "multiki_falg",
+	},
+	{
+		id: 2,
+		icons: [
+			{
+				id: 1,
+				iconAlt: "telegram",
+				iconUrl: "/telegram.png",
+				href: "https://t.me/dai_mott",
+			},
+			{
+				id: 2,
+				iconAlt: "instagram",
+				iconUrl: "/instagram.png",
+				href: "https://instagram.com/dai_mott",
+			},
+		],
+		title: "dai_mott",
+	},
+];
+
 const data = [
 	{
 		title: "История фонда",
@@ -150,32 +277,44 @@ const data = [
 	{
 		title: "НАШИ СОЦ. СЕТИ",
 		content: (
-			<div className="w-full flex justify-start">
+			<div className="w-full flex justify gap-5 mt-4">
 				<div className="w-full flex flex-col gap-2 text-[23px]">
-					<div className="flex items-center gap-3">
-						<div className="flex items-center gap-1">
-							<a target="_blank" href="https://wa.me/+79640279097">
-								<Image src="/whatsapp.png" alt="whatsapp" width={31} height={31} />
-							</a>
-							<a target="_blank" href="tel:+79640279097">
-								<Image src="/phone.png" alt="phone" width={31} height={31} />
-							</a>
+					{socials.map((item) => (
+						<div key={item.id} className="flex items-center gap-4">
+							<div className="flex items-center gap-1">
+								{item.icons.map((icon) => (
+									<a key={icon.id} target="_blank" href={icon.href}>
+										<Image
+											src={icon.iconUrl}
+											alt={icon.iconAlt}
+											width={31}
+											height={31}
+										/>
+									</a>
+								))}
+							</div>
+							<p className="text-xl">{item.title}</p>
 						</div>
-
-						<p className="text-xl">8(964) 027-90-97</p>
-					</div>
-					<div className="flex items-center gap-3">
-						<div className="flex items-center gap-1">
-							<a target="_blank" href="https://wa.me/+79281113333">
-								<Image src="/whatsapp.png" alt="whatsapp" width={31} height={31} />
-							</a>
-							<a target="_blank" href="tel:+79640279097">
-								<Image src="/phone.png" alt="phone" width={31} height={31} />
-							</a>
+					))}
+				</div>
+				<div className="w-full flex flex-col gap-2 text-[23px]">
+					{contacts.map((item) => (
+						<div key={item.id} className="flex items-center gap-4">
+							<div className="flex items-center gap-1">
+								{item.icons.map((icon) => (
+									<a key={icon.id} target="_blank" href={icon.href}>
+										<Image
+											src={icon.iconUrl}
+											alt={icon.iconAlt}
+											width={31}
+											height={31}
+										/>
+									</a>
+								))}
+							</div>
+							<p className="text-xl">{item.title}</p>
 						</div>
-
-						<p className="text-xl">8(928) 111-33-33</p>
-					</div>
+					))}
 				</div>
 			</div>
 		),
