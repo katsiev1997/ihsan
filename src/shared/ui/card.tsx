@@ -7,9 +7,10 @@ type Props = {
     imageUrl: string;
     alt: string;
     title: string;
+    description: string;
 };
 
-export const Card = ({ imageUrl, title, alt }: Props) => {
+export const Card = ({ imageUrl, title, alt, description }: Props) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -29,9 +30,7 @@ export const Card = ({ imageUrl, title, alt }: Props) => {
                 // Блок с текстом
                 <div className="w-[396px] h-[361px] p-5 flex items-center justify-center transition-all">
                     <p className="text-[#346c1e] text-xl text-center">
-                        Мы оказываем адресную помощь малоимущим семьям, детям-сиротам, инвалидам,
-                        больным, нуждающимся в лечении, и другим категориям граждан, оказавшимся в
-                        трудной жизненной ситуации.
+                        {description}
                     </p>
                 </div>
             )}
