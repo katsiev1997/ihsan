@@ -54,7 +54,6 @@ export const ContactWithUs = ({ open, setOpen }: Props) => {
                                     <Image src="/phone.png" alt="phone" width={31} height={31} />
                                 </a>
                             </div>
-
                             <p className="text-xl">8(928) 111-33-33</p>
                         </div>
                     </div>
