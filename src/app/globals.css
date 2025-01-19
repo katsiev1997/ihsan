@@ -3,24 +3,25 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffffff;
+	--background: #ffffff;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: var(--font-jost), var(--font-montserrat), var(--font-inter), sans-serif;
-    overflow-x: hidden;
+	color: var(--foreground);
+	background: var(--background);
+	font-family: var(--font-jost), var(--font-montserrat), var(--font-inter), sans-serif;
+	overflow-x: hidden;
 }
 
 .gradient-top {
-    background: linear-gradient(180deg, #51a132 0%, #fff 100%);
+	background: linear-gradient(180deg, #51a132 0%, #fff 100%);
 }
 
 .gradient-bottom {
-    background: linear-gradient(180deg, #fff 0%, #346c1e 100%);
+	background: linear-gradient(180deg, #fff 0%, #346c1e 100%);
 }
