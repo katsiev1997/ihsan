@@ -9,7 +9,7 @@ import { SectionSix } from "@/page/home/section-six";
 export default function Home() {
 	return (
 		<div>
-			<div className="gradient-top">
+			<div>
 				<Header />
 				<SectionOne />
 			</div>

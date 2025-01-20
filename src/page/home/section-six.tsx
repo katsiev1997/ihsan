@@ -15,28 +15,28 @@ export const SectionSix = () => {
 						<ul className="flex items-center gap-4 flex-wrap">
 							<li>
 								<a href="#fund">
-									<div className="px-5 py-6 rounded-full bg-white uppercase flex justify-center items-center font-semibold text-[#51a132]">
+									<div className="px-5 h-[55px] rounded-full bg-white uppercase flex justify-center items-center font-semibold text-[#51a132]">
 										О ФОНДЕ
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="#programs">
-									<div className="px-5 py-6 rounded-full bg-white uppercase flex justify-center items-center font-semibold text-[#51a132]">
+									<div className="px-5 h-[55px] rounded-full bg-white uppercase flex justify-center items-center font-semibold text-[#51a132]">
 										ПРОГРАММЫ
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="#donations">
-									<div className="px-5 py-6 rounded-full bg-white uppercase flex justify-center items-center font-semibold text-[#51a132]">
+									<div className="px-5 h-[55px] rounded-full bg-white uppercase flex justify-center items-center font-semibold text-[#51a132]">
 										СБОРЫ
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="#news">
-									<div className="px-5 py-6 rounded-full bg-white uppercase flex justify-center items-center font-semibold text-[#51a132]">
+									<div className="px-5 h-[55px] rounded-full bg-white uppercase flex justify-center items-center font-semibold text-[#51a132]">
 										НОВОСТИ
 									</div>
 								</a>

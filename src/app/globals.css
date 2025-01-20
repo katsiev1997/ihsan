@@ -16,10 +16,7 @@ body {
 	background: var(--background);
 	font-family: var(--font-jost), var(--font-montserrat), var(--font-inter), sans-serif;
 	overflow-x: hidden;
-}
-
-.gradient-top {
-	background: linear-gradient(180deg, #51a132 0%, #fff 100%);
+	background: linear-gradient(180deg, #346c1e 0%, #fff 30%);
 }
 
 .gradient-bottom {
